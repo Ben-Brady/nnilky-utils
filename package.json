@@ -1,0 +1,49 @@
+{
+  "name": "@nnilky/utils",
+  "private": false,
+  "version": "0.0.1",
+  "author": "Ben Brady",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ben-Brady/nnily-utils.git"
+  },
+
+  "scripts": {
+    "build": "tsc",
+    "publish:public": "npm publish --access=public",
+    "prepublish": "tsc",
+    "benchmark": "pnpx microbundle dist"
+  },
+
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./index.js": {
+      "default": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "keywords": [
+    "utility"
+  ],
+  "files": [
+    "LICENSE",
+    "README.md",
+    "./dist/*.d.ts",
+    "./dist/*.js.map",
+    "./dist/*.js",
+    "./dist/*.jsx"
+  ],
+  "devDependencies": {
+    "typescript": "~5.8.3"
+  }
+}
