@@ -1,7 +1,8 @@
-# Solid Hooks
+# `nnilky utils`
 
-A set of compact utility hooks for solid.js, mostly meant my own personal projects but free to use anyway.
-
-They're designed to be as small as possible, in a few places there's multiple depending on your needs. For instance `useInterval` & `useDeltaInterval`, useDeltaInterval adds a deltaTime parameter that is not need in most cases so is a seperate function so that `useInterval` can be smaller.
+A set of compact utilities that I share across projects, mostly meant my own use but free to use by anyone.
 
 There's no documentation, the docstrings should have enough information though.
+
+## TODO
+

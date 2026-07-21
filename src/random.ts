@@ -1,5 +1,5 @@
 /*#__NO_SIDE_EFFECTS__*/
-export const sample = <T>(array: T[]): T => array[Math.random() * array.length];
+export const sample = <T>(array: T[]): T => array[Math.floor(Math.random() * array.length)];
 
 /*#__NO_SIDE_EFFECTS__*/
 export const shuffle = <T>(array: T[]): T[] =>
