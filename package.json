@@ -11,7 +11,7 @@
 
   "scripts": {
     "build": "tsc",
-    "release": "tsc && npm publish --access=public"
+    "release": "tsc && pnpm publish --access=public"
   },
 
   "type": "module",
