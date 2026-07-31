@@ -15,6 +15,9 @@ export const randrange = (min: number, max: number) => min + Math.random() * (ma
 export const randint = (min: number, max: number) => Math.floor(min + Math.random() * (max - min));
 
 /*#__NO_SIDE_EFFECTS__*/
+export const randbool = () => Math.random() < 0.5;
+
+/*#__NO_SIDE_EFFECTS__*/
 export const createRNG = (seed: number) => {
     const m = 2147483648;
     let current = seed % m || 1;

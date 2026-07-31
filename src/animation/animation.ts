@@ -1,4 +1,4 @@
-import { easing } from "./index.js";
+import { easing } from "../index.js";
 
 export function animate(options: {
     callback: (p: number) => void;
@@ -7,9 +7,8 @@ export function animate(options: {
     start?: number;
     loop?: boolean;
     easing?: easing.EasingFunction;
-    getTime?: () => number;
 }) {
-    const { callback, start, duration, loop, signal, getTime } = options;
+    const { callback, start, duration, loop, signal } = options;
     const easingFunc = options.easing ?? easing.linear;
 
     let ended = false;
@@ -20,9 +19,8 @@ export function animate(options: {
         if (ended) return;
         if (signal?.aborted) return;
 
-        const now = getTime?.() ?? time;
-        let dt = now - lastFrame;
-        lastFrame = now;
+        let dt = time - lastFrame;
+        lastFrame = time;
         elapsed += dt;
         let p = elapsed / duration;
 
