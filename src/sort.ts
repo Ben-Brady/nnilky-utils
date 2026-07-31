@@ -1,11 +1,11 @@
-export function getLargestBy<T>(
+export function largestBy<T>(
     arr: T[],
     callback: (value: T) => number | undefined | null,
 ): T | undefined {
     return sortBy(arr, callback).at(-1);
 }
 
-export function getSmallestBy<T>(
+export function smallestBy<T>(
     arr: T[],
     callback: (value: T) => number | undefined | null,
 ): T | undefined {
