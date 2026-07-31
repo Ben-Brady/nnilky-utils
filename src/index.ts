@@ -6,6 +6,7 @@ export {
     sample,
     shuffle,
 } from "./random.js";
+export { combinations } from "./array.js";
 export { assert, assertNever, assertInstanceOf } from "./assert.js";
 export { promiseAllObject } from "./resolve.js";
 export { sleep } from "./sleep.js";
