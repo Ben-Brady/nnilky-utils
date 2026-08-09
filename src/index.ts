@@ -14,3 +14,12 @@ export { entries, objEntries, objKeys, objValues } from "./object.js";
 export { sortBy, largestBy, smallestBy } from "./sort.js";
 export { lerp, animate, easing } from "./animation/index.js";
 export { getTextDistance, formatBytes, formatTimeSince } from "./exotic/index.js";
+export { saveBlob, downloadUrl, requestMultiFileUpload, requestFileUpload } from "./file.js";
+export {
+    CAN_MOUNT_FILE,
+    getOPFSHandle,
+    mountFileHandle,
+    wrapFileHandle,
+    type FileHandle,
+    type MountFileHandleOptions,
+} from "./file-handle.js";
