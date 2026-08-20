@@ -16,7 +16,7 @@ export { lerp, animate, easing } from "./animation/index.js";
 export { getTextDistance, formatBytes, formatTimeSince } from "./exotic/index.js";
 export { saveBlob, downloadUrl, requestMultiFileUpload, requestFileUpload } from "./file.js";
 export {
-    CAN_MOUNT_FILE,
+    canMountFile,
     getOPFSHandle,
     mountFileHandle,
     wrapFileHandle,

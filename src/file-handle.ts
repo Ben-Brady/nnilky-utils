@@ -9,7 +9,7 @@ export type MountFileHandleOptions = {
     accept?: string;
 };
 
-export const CAN_MOUNT_FILE = "showOpenFilePicker" in window;
+export const canMountFile = () => "showOpenFilePicker" in window;
 export async function mountFileHandle(options?: MountFileHandleOptions) {
     if (!("showOpenFilePicker" in window)) throw new Error("Not available");
     const showOpenFilePicker = window.showOpenFilePicker as (
