@@ -19,10 +19,10 @@ export const formatTimeSince = (ms: number) => {
 
 export const formatBytes = (bytes: number) => {
     let kb = bytes / 1000;
-    let mb = bytes / kb;
-    let gb = bytes / mb;
-    let tb = bytes / gb;
-    let pb = bytes / tb;
+    let mb = kb / 1000;
+    let gb = mb / 1000;
+    let tb = gb / 1000;
+    let pb = tb / 1000;
 
     if (pb > 1) return `${toFixedNoTrailing(pb, 1)}Pb`;
     if (tb > 1) return `${toFixedNoTrailing(tb, 1)}Tb`;
